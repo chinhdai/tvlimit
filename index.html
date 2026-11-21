@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Chính sách quyền riêng tư – Giới hạn giờ xem (TV Time Limit)</title>
+<title>Chính sách quyền riêng tư – Giới hạn giờ xem (Watch Time Limit)</title>
 <link rel="icon" href="icon.png">
 <style>
   :root { --bg:#f6f7fb; --card:#fff; --text:#1b2233; --muted:#5b6478; --accent:#1c2e56; --amber:#c98200; }
@@ -27,35 +27,36 @@
   <header>
     <img src="icon.png" alt="">
     <div>
-      <h1>Giới hạn giờ xem (TV Time Limit)</h1>
+      <h1>Giới hạn giờ xem (Watch Time Limit)</h1>
       <div class="meta">Chính sách quyền riêng tư · Privacy Policy</div>
     </div>
   </header>
   <nav><a href="#vi">Tiếng Việt</a><a href="#en">English</a></nav>
 
   <section id="vi">
-    <p class="meta">Cập nhật: 07/11/2026 · Nhà phát triển: Nguyễn Văn Mạnh · Liên hệ: <a href="mailto:vanmanhvcu@gmail.com">vanmanhvcu@gmail.com</a></p>
+    <p class="meta">Cập nhật: 21/11/2026 · Nhà phát triển: Nguyễn Văn Mạnh · Liên hệ: <a href="mailto:vanmanhvcu@gmail.com">vanmanhvcu@gmail.com</a></p>
+    <p>Chính sách này áp dụng cho ứng dụng Android <strong>Giới hạn giờ xem (Watch Time Limit)</strong>, mã gói <code>com.manh.tvlimit</code>, trên TV, máy tính bảng và điện thoại. Trước bản 3.0, ứng dụng chỉ dành cho TV và có tên tiếng Anh <strong>TV Time Limit</strong>; chính sách dưới đây áp dụng cho mọi phiên bản.</p>
     <div class="card summary"><strong>Tóm tắt:</strong> ứng dụng không thu thập, không lưu trữ trên máy chủ và không chia sẻ bất kỳ dữ liệu cá nhân nào. Ứng dụng không có quyền truy cập Internet.</div>
 
     <h2>Dữ liệu ứng dụng xử lý</h2>
-    <p>Mọi dữ liệu dưới đây chỉ nằm trong bộ nhớ của TV và bị xóa khi gỡ ứng dụng:</p>
+    <p>Mọi dữ liệu dưới đây chỉ nằm trong bộ nhớ của thiết bị (TV, máy tính bảng hoặc điện thoại) và bị xóa khi gỡ ứng dụng:</p>
     <ul>
-      <li>Số phút giới hạn mỗi ngày bạn đặt cho từng ứng dụng, và số phút đã xem trong ngày.</li>
-      <li>Mã PIN và mã khôi phục, chỉ lưu dưới dạng băm có salt (PBKDF2), không lưu bản gốc.</li>
+      <li>Số phút giới hạn mỗi ngày và khung giờ được xem bạn đặt cho từng ứng dụng, và số phút đã xem trong ngày.</li>
+      <li>Mã PIN và mã khôi phục, chỉ lưu dưới dạng băm có salt (PBKDF2), không lưu bản gốc; số lần nhập sai liên tiếp, để khóa việc nhập sau 5 lần sai.</li>
       <li>Ngôn ngữ bạn chọn.</li>
     </ul>
 
     <h2>Dịch vụ Trợ năng (AccessibilityService)</h2>
-    <p>Ứng dụng dùng API Trợ năng chỉ để biết <strong>ứng dụng nào đang mở trên màn hình</strong>, nhằm đếm giờ xem và hiện màn hình khóa khi hết số phút phụ huynh đặt. Đây là tính năng kiểm soát của phụ huynh, chỉ chạy khi người dùng tự bật sau khi đọc thông báo trong ứng dụng. Dịch vụ không đọc nội dung màn hình, không đọc chữ nhập vào, không chặn phím điều khiển và không gửi thông tin đi đâu.</p>
+    <p>Ứng dụng dùng API Trợ năng chỉ để biết <strong>ứng dụng nào đang mở trên màn hình</strong>, nhằm đếm giờ xem và hiện màn hình khóa khi hết số phút hoặc ngoài khung giờ phụ huynh đặt. Đây là tính năng kiểm soát của phụ huynh, chỉ chạy khi người dùng tự bật sau khi đọc thông báo trong ứng dụng và bấm Đồng ý. Dịch vụ không đọc nội dung màn hình, không đọc chữ nhập vào, không chặn thao tác chạm hay phím bấm và không gửi thông tin đi đâu. Nếu thiết bị không cho hiện màn hình khóa, dịch vụ chỉ đưa về màn hình chính.</p>
 
     <h2>Các quyền khác</h2>
     <ul>
-      <li><strong>Truy cập dữ liệu sử dụng:</strong> chỉ để biết ứng dụng đang mở khi dịch vụ khởi động lại. Dữ liệu không rời khỏi TV.</li>
+      <li><strong>Truy cập dữ liệu sử dụng</strong> (không bắt buộc, người dùng tự cấp): chỉ để biết ứng dụng nào đang hiện trên màn hình: lúc dịch vụ khởi động lại, và trên máy tính bảng, điện thoại khi hai ứng dụng chia đôi màn hình, để tính giờ cho cả hai. Dữ liệu không rời khỏi thiết bị.</li>
       <li><strong>Hiển thị trên ứng dụng khác:</strong> chỉ dùng trên TV Xiaomi MiTV-MZTU0, để phát một đoạn hình đen 2 giây giúp giao diện không bị giật sau khi xem Live TV hoặc HDMI. Thông báo "còn n phút" do dịch vụ Trợ năng hiển thị, không cần quyền này.</li>
     </ul>
 
     <h2>Trẻ em</h2>
-    <p>Ứng dụng dành cho phụ huynh, giúp quản lý thời gian xem TV của trẻ. Ứng dụng không thu thập dữ liệu của trẻ hay của bất kỳ ai.</p>
+    <p>Ứng dụng dành cho phụ huynh, giúp quản lý thời gian trẻ dùng TV, máy tính bảng và điện thoại. Ứng dụng không thu thập dữ liệu của trẻ hay của bất kỳ ai.</p>
 
     <h2>Liên hệ và thay đổi</h2>
     <p>Mọi câu hỏi xin gửi về <a href="mailto:vanmanhvcu@gmail.com">vanmanhvcu@gmail.com</a>. Nếu chính sách thay đổi, trang này sẽ được cập nhật kèm ngày sửa.</p>
@@ -64,28 +65,29 @@
   <hr>
 
   <section id="en" lang="en">
-    <p class="meta">Updated: 2026-11-07 · Developer: Nguyễn Văn Mạnh · Contact: <a href="mailto:vanmanhvcu@gmail.com">vanmanhvcu@gmail.com</a></p>
+    <p class="meta">Updated: 2026-11-21 · Developer: Nguyễn Văn Mạnh · Contact: <a href="mailto:vanmanhvcu@gmail.com">vanmanhvcu@gmail.com</a></p>
+    <p>This policy covers the Android app <strong>Watch Time Limit (Giới hạn giờ xem)</strong>, package <code>com.manh.tvlimit</code>, on TVs, tablets and phones. Before version 3.0 the app was for TVs only and its English name was <strong>TV Time Limit</strong>; this policy applies to every version.</p>
     <div class="card summary"><strong>Summary:</strong> the app collects no personal data, stores nothing on any server and shares nothing. It has no Internet permission.</div>
 
     <h2>Data the app handles</h2>
-    <p>Everything below stays on the TV and is deleted when the app is uninstalled:</p>
+    <p>Everything below stays on the device (TV, tablet or phone) and is deleted when the app is uninstalled:</p>
     <ul>
-      <li>The daily minutes you set for each app, and the minutes watched today.</li>
-      <li>The PIN and the recovery code, stored only as salted PBKDF2 hashes, never in plain form.</li>
+      <li>The daily minutes and watching hours you set for each app, and the minutes watched today.</li>
+      <li>The PIN and the recovery code, stored only as salted PBKDF2 hashes, never in plain form; the number of wrong tries in a row, to lock entry after 5 of them.</li>
       <li>The language you choose.</li>
     </ul>
 
     <h2>Accessibility service</h2>
-    <p>The app uses the Accessibility API only to know <strong>which app is on screen</strong>, so it can count viewing time and show a lock screen when the minutes a parent set run out. This parental-control feature runs only after the user turns it on, following an in-app disclosure. The service does not read screen content or typed text, does not block remote keys and sends nothing anywhere.</p>
+    <p>The app uses the Accessibility API only to know <strong>which app is on screen</strong>, so it can count viewing time and show a lock screen when the minutes a parent set run out or outside the watching hours the parent set. This parental-control feature runs only after the user turns it on, following an in-app disclosure and tapping Agree. The service does not read screen content or typed text, does not block touches or keys and sends nothing anywhere. If the device does not let the lock screen appear, the service only goes back to the Home screen.</p>
 
     <h2>Other permissions</h2>
     <ul>
-      <li><strong>Usage access:</strong> only to find the app on screen when the service restarts. The data never leaves the TV.</li>
+      <li><strong>Usage access</strong> (optional, granted by the user): only to know which apps are on screen: when the service restarts, and on tablets and phones when two apps share a split screen, so that both are counted. The data never leaves the device.</li>
       <li><strong>Display over other apps:</strong> only on the Xiaomi MiTV-MZTU0, for a 2-second black clip that keeps its interface smooth after Live TV or HDMI. The "minutes left" banner is drawn by the Accessibility service and does not need it.</li>
     </ul>
 
     <h2>Children</h2>
-    <p>The app is meant for parents managing their children's TV time. It collects no data from children or anyone else.</p>
+    <p>The app is meant for parents managing their children's time on TVs, tablets and phones. It collects no data from children or anyone else.</p>
 
     <h2>Contact and changes</h2>
     <p>Questions: <a href="mailto:vanmanhvcu@gmail.com">vanmanhvcu@gmail.com</a>. If this policy changes, this page will be updated with the new date.</p>
